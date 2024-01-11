@@ -1,0 +1,44 @@
+{
+	"name": "Promopage",
+	"description": "A promotional page.",
+
+	"attribute_definition_groups": [
+		{
+			"id": "search",
+			"name": "Search Results Display",
+			"description": "Define the title, image, and description returned in search results for the page.",
+			"attribute_definitions": [
+				{
+					"id": "title",
+					"name": "Search Results Title",
+					"description": "The page title displayed in search results.",
+					"type": "text",
+					"required": false
+				},
+				{
+					"id": "image",
+					"name": "Search Results Image",
+					"description": "The image displayed in search results.",
+					"type": "file",
+					"required": false
+				},
+				{
+					"id": "description",
+					"name": "Search Results Description",
+					"description": "The page description displayed in search results.",
+					"type": "text",
+					"required": false
+				}
+			]
+		}
+	],
+	"region_definitions": [
+			{
+				"id": "main",
+				"name": "Main",
+				"component_type_exclusions": [{
+					"type_id": "commerce_assets.campaignBanner"
+				}]
+			}
+	]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Promo Tile",
+    "description": "This is promo tile component.",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "promoTileSpec",
+            "name": "Promo Tile Specifications",
+            "description": "Specification of the product to be displayed in the product tile.",
+            "attribute_definitions": [
+                {
+                    "id": "promotion",
+                    "name": "promotion ID",
+                    "description": "The ID of the promotion to be displayed.",
+                    "type": "string",
+                    "required": true
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}
